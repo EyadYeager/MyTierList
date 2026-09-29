@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tierboard — Make your tier list</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101116;
+      --panel: #191a22;
+      --panel-light: #22232d;
+      --line: #30313c;
+      --text: #f4f3f8;
+      --muted: #a3a3b2;
+      --accent: #a78bfa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 50% -15%, #302451 0, var(--bg) 46%);
+      color: var(--text);
+      font: 15px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button, input { font: inherit; }
+    button { color: inherit; cursor: pointer; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: auto; }
+    header {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ffffff12;
+    }
+    .brand { display: flex; gap: 10px; align-items: center; font-weight: 800; font-size: 19px; letter-spacing: -.5px; }
+    .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: linear-gradient(135deg,#c4b5fd,#7c3aed); color: #171323; }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+    .button { border: 1px solid var(--line); background: var(--panel-light); padding: 9px 14px; border-radius: 9px; font-weight: 650; }
+    .button:hover { border-color: #777083; }
+    .button.primary { background: var(--accent); border-color: var(--accent); color: #171323; }
+    main { padding: 44px 0 60px; }
+    .intro { text-align: center; margin: 0 auto 30px; }
+    .eyebrow { color: #c4b5fd; text-transform: uppercase; letter-spacing: 2px; font-weight: 750; font-size: 11px; }
+    h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.1; letter-spacing: -1.8px; margin: 9px 0; }
+    .intro p { color: var(--muted); margin: 0; }
+    .workspace { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 18px; align-items: start; }
+    .board, .sidebar { background: #171820eF; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+    .board-head { display: flex; align-items: center; justify-content: space-between; padding: 15px 17px; border-bottom: 1px solid var(--line); }
+    .board-head strong { font-size: 14px; }
+    .board-head span { color: var(--muted); font-size: 12px; }
+    .tiers { padding: 12px; display: grid; gap: 8px; }
+    .tier { min-height: 79px; display: grid; grid-template-columns: 94px minmax(0, 1fr); border: 1px solid #ffffff12; border-radius: 8px; overflow: hidden; background: #111218; }
+    .tier-label { display: grid; place-items: center; color: #241e2d; font-size: 23px; font-weight: 900; text-shadow: 0 1px #ffffff55; }
+    .tier-items { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 8px; min-height: 77px; }
+    .tier-items:empty::after { content: "Drop items here"; color: #686875; font-size: 12px; padding-left: 4px; }
+    .tier[data-tier="S"] .tier-label { background: #ff7d79; }
+    .tier[data-tier="A"] .tier-label { background: #ffb66b; }
+    .tier[data-tier="B"] .tier-label { background: #ffe078; }
+    .tier[data-tier="C"] .tier-label { background: #8bdc8a; }
+    .tier[data-tier="D"] .tier-label { background: #79c9ed; }
+    .item { width: 72px; height: 60px; border-radius: 6px; display: grid; place-items: center; text-align: center; padding: 4px; color: #fff; font-size: 11px; font-weight: 750; line-height: 1.2; cursor: grab; user-select: none; background: linear-gradient(145deg,#56506f,#343447); border: 1px solid #ffffff1f; box-shadow: 0 3px 8px #0004; }
+    .item:active { cursor: grabbing; }
+    .sidebar { padding: 16px; }
+    .sidebar h2 { font-size: 15px; margin: 0 0 3px; }
+    .sidebar p { color: var(--muted); font-size: 12px; margin: 0 0 14px; }
+    .search { width: 100%; background: #101116; border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; color: var(--text); outline: none; margin-bottom: 12px; }
+    .search:focus { border-color: var(--accent); }
+    .pool { min-height: 145px; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; border: 1px dashed #464653; border-radius: 9px; padding: 9px; }
+    .pool .item { width: calc(50% - 4px); height: 56px; }
+    .sidebar .button { width: 100%; margin-top: 12px; }
+    footer { text-align: center; color: #777784; font-size: 12px; padding: 23px 0; }
+    .drag-over { outline: 2px solid var(--accent); outline-offset: -2px; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 24px, 600px); }
+      main { padding-top: 30px; }
+      .workspace { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+      .pool { min-height: 80px; }
+      .tier { grid-template-columns: 64px minmax(0, 1fr); }
+      .tier-label { font-size: 19px; }
+      .item { width: 62px; height: 54px; }
+      .header-actions .button:first-child { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand"><span class="brand-mark">T</span> tierboard</div>
+    <div class="header-actions">
+      <button class="button" id="reset">↺ Reset</button>
+      <button class="button primary" id="save">Save tier list</button>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro">
+      <div class="eyebrow">Your opinion, organized</div>
+      <h1>Build your tier list</h1>
+      <p>Drag the items into a tier. There are no wrong answers.</p>
+    </section>
+    <section class="workspace" aria-label="Tier list editor">
+      <div class="board">
+        <div class="board-head"><strong>🎮 &nbsp; Favorite games</strong><span>Untitled tier list</span></div>
+        <div class="tiers">
+          <div class="tier" data-tier="S"><div class="tier-label">S</div><div class="tier-items" data-dropzone></div></div>
+          <div class="tier" data-tier="A"><div class="tier-label">A</div><div class="tier-items" data-dropzone></div></div>
+          <div class="tier" data-tier="B"><div class="tier-label">B</div><div class="tier-items" data-dropzone></div></div>
+          <div class="tier" data-tier="C"><div class="tier-label">C</div><div class="tier-items" data-dropzone></div></div>
+          <div class="tier" data-tier="D"><div class="tier-label">D</div><div class="tier-items" data-dropzone></div></div>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <h2>Items to rank</h2>
+        <p>Drag an item into a row to rank it.</p>
+        <input class="search" id="search" type="search" placeholder="Search items…" aria-label="Search items">
+        <div class="pool" data-dropzone id="pool">
+          <div class="item" draggable="true">Minecraft</div>
+          <div class="item" draggable="true">The Legend of Zelda</div>
+          <div class="item" draggable="true">Stardew Valley</div>
+          <div class="item" draggable="true">Portal 2</div>
+          <div class="item" draggable="true">Elden Ring</div>
+          <div class="item" draggable="true">Animal Crossing</div>
+          <div class="item" draggable="true">Hades</div>
+          <div class="item" draggable="true">Super Mario</div>
+        </div>
+        <button class="button" id="add-item">＋ Add an item</button>
+      </aside>
+    </section>
+    <footer>A little space for your very important rankings.</footer>
+  </main>
+  <script>
+    let draggedItem = null;
+    document.querySelectorAll('.item').forEach(item => {
+      item.addEventListener('dragstart', () => { draggedItem = item; });
+    });
+    document.querySelectorAll('[data-dropzone]').forEach(zone => {
+      zone.addEventListener('dragover', event => { event.preventDefault(); zone.classList.add('drag-over'); });
+      zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+      zone.addEventListener('drop', event => {
+        event.preventDefault();
+        zone.classList.remove('drag-over');
+        if (draggedItem) zone.appendChild(draggedItem);
+      });
+    });
+    document.getElementById('search').addEventListener('input', event => {
+      const query = event.target.value.toLowerCase();
+      document.querySelectorAll('#pool .item').forEach(item => {
+        item.hidden = !item.textContent.toLowerCase().includes(query);
+      });
+    });
+    document.getElementById('add-item').addEventListener('click', () => {
+      const name = prompt('What item would you like to add?');
+      if (!name || !name.trim()) return;
+      const item = document.createElement('div');
+      item.className = 'item';
+      item.draggable = true;
+      item.textContent = name.trim();
+      item.addEventListener('dragstart', () => { draggedItem = item; });
+      document.getElementById('pool').appendChild(item);
+    });
+    document.getElementById('reset').addEventListener('click', () => {
+      document.querySelectorAll('.tier-items .item').forEach(item => document.getElementById('pool').appendChild(item));
+    });
+    document.getElementById('save').addEventListener('click', () => {
+      const results = [...document.querySelectorAll('.tier')].map(tier =>
+        `${tier.dataset.tier}: ${[...tier.querySelectorAll('.item')].map(item => item.textContent).join(', ') || '—'}`
+      ).join('\n');
+      alert('Your tier list\n\n' + results);
+    });
+  </script>
+</body>
+</html>
