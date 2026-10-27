@@ -1,0 +1,318 @@
+main {}
+
+.Wrap {}
+
+.Wrap-header {
+    display: flex
+}
+
+/* --------Save and Upload -------- */
+.Wrap-actions {}
+
+.btnSave {}
+
+.btnUpload {}
+
+/* ------Tier List------ */
+.TierList {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 270px;
+    gap: 18px;
+    align-items: start;
+}
+
+.board {
+    padding: 9px 14px;
+    border-radius: 9px;
+    background: #171820eF;
+    border-color: #a78bfa;
+}
+
+.tiers {
+    padding: 12px;
+    display: grid;
+    gap: 8px;
+}
+
+.tier {
+    min-height: 79px;
+    display: grid;
+    grid-template-columns: 94px minmax(0, 1fr);
+    border: 1px solid #ffffff12;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #111218;
+}
+
+.tier-label {
+    display: grid;
+    place-items: center;
+    color: #241e2d;
+    font-size: 23px;
+    font-weight: 900;
+    text-shadow: 0 1px #ffffff55;
+}
+
+.tier-items {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 8px;
+    min-height: 77px;
+}
+
+.tier-items:empty::after {
+    content: "Drop items here";
+    color: #686875;
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+.tier[data-tier="S"] .tier-label {
+    background: #ff7d79;
+}
+
+.tier[data-tier="A"] .tier-label {
+    background: #ffb66b;
+}
+
+.tier[data-tier="B"] .tier-label {
+    background: #ffe078;
+}
+
+.tier[data-tier="C"] .tier-label {
+    background: #8bdc8a;
+}
+
+.tier[data-tier="D"] .tier-label {
+    background: #79c9ed;
+}
+
+.tier[data-tier="E"] .tier-label {
+    background: #5c43ee;
+}
+
+.tier[data-tier="F"] .tier-label {
+    background: #79c9ed;
+}
+
+
+/* --------Sidebar-------- */
+.Sidebar {
+    padding: 9px 14px;
+    border-radius: 9px;
+    background: #171820eF;
+    border-color: #a78bfa;
+}
+
+.title {
+    color: #a78bfa;
+}
+
+.ptitle {
+    color: #a78bfa;
+}
+
+.search {
+    width: 100%;
+    background: #101116;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 9px 11px;
+    color: #a78bfa;
+    outline: none;
+    margin-bottom: 12px;
+}
+
+.search:focus {
+    border-color: #a78bfa;
+}
+
+.pool {
+    display: flex;
+    Width: 100%;
+
+}
+
+.item {
+    color: #a78bfa;
+}
+
+.btnSidebar {
+    background: #acaebbef;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    display: flex;
+    width: 100%;
+}
+
+.btnReset {
+    background: red;
+    padding: 9px 14px;
+    border-radius: 9px;
+    font-weight: 650;
+    color: inherit;
+    cursor: pointer;
+    width: 100%;
+}
+
+.AddRemovebtn {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    align-items: center;
+}
+
+.button {
+    background: #a78bfa;
+    padding: 9px 14px;
+    border-radius: 9px;
+    font-weight: 650;
+    color: inherit;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+}
+
+.button:hover {
+    border-color: #5a16cf;
+    transition: 0.3s;
+    background: #644f88;
+    color: #a78bfa;
+
+
+}
+
+
+.item {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 750;
+    line-height: 1.2;
+    cursor: grab;
+    user-select: none;
+    background: linear-gradient(145deg, #56506f, #343447);
+    border: 1px solid #ffffff1f;
+    box-shadow: 0 3px 8px #0004;
+}
+
+.item:active {
+    cursor: grabbing;
+}
+
+
+
+
+
+/* --------Test drag script-------- */
+
+.drag-over {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+}
+
+/* -------- chatgpt test-------- */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    width: 320px;
+    max-width: calc(100% - 40px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+#item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#item-form input[type="text"],
+#item-form input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#item-form input[type="text"] {
+    padding: 10px;
+}
+
+#item-form input[type="color"] {
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.modal-buttons button {
+    padding: 9px 14px;
+    cursor: pointer;
+}
+
+
+.item:active {
+    cursor: grabbing;
+}
+
+
+#item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#item-form input[type="url"],
+#item-form input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+
+.item img {
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.item:active {
+    cursor: grabbing;
+}
+
+.itemname {
+    top: 0;
+    
+}

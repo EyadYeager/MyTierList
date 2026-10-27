@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierboard — Make your tier list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="Wrap">
+        <section class="Wrap-header">
+            <div class="TierListName">Tier List</div>
+            <h2>Build your tier list</h2>
+            <p>Drag the items into a tier. There are no wrong answers.</p>
+            <!-- name(TierListName) is going to be in the middle and the save and upload(Wrap-actions,btnSave and btnUpload) is going to be stacked on echother on the right side -->
+            <div class="Wrap-actions">
+                <button class="btnSave" id="Save">Save Tier List</button>
+                <button class="btnUpload" id="Upload">Upload Tier List</button>
+            </div>
+        </section>
+        <section class="TierList">
+            <!-- add btn tier/remove tier btn -->
+            <div class="board">
+                <div class="tiers">
+                    <div class="tier" data-tier="S">
+                        <div class="tier-label">S</div>
+                        <div class="tier-items" data-dropzone></div>
+                    </div>
+                    <div class="tier" data-tier="A">
+                        <div class="tier-label">A</div>
+                        <div class="tier-items" data-dropzone></div>
+                    </div>
+                    <div class="tier" data-tier="B">
+                        <div class="tier-label">B</div>
+                        <div class="tier-items" data-dropzone></div>
+                    </div>
+                    <div class="tier" data-tier="C">
+                        <div class="tier-label">C</div>
+                        <div class="tier-items" data-dropzone></div>
+                    </div>
+                    <div class="tier" data-tier="D">
+                        <div class="tier-label">D</div>
+                        <div class="tier-items" data-dropzone></div>
+                    </div>
+                    <div class="tier" data-tier="E">
+                        <div class="tier-label">E</div>
+                        <div class="tier-items" data-dropzone></div>
+                    </div>
+                    <div class="tier" data-tier="F">
+                        <div class="tier-label">F</div>
+                        <div class="tier-items" data-dropzone></div>
+                    </div>
+                    <!-- tierlist form S to f  -->
+                </div>
+            </div>
+            <aside class="Sidebar">
+                <h2 class="title">Items to rank</h2>
+                <p class="ptitle">Drag an item into the tier you want to place it in.</p>
+                <input class="search" id="search" type="search" placeholder="Search items…" aria-label="Search items">
+                <!-- items that is added -->
+                <div class="pool" data-dropzone id="pool">
+                    <!-- items -->
+                    <div class="item" draggable="true">Test</div>
+                </div>
+                <div class="btnSidebar">
+                    <button class="btnReset" id="Reset">Reset</button>
+                    <!-- btn to add items -->
+                    <div class="AddRemovebtn">
+                        <button class="button" id="add-item">＋ Add an item</button>
+                        <!-- btn to remove items -->
+                        <button class="button" id="remove-item">＋ Remove an item</button>
+                    </div>
+                    <!-- chatgpt code for testing -->
+                    <!-- Add item modal -->
+                    <div id="item-modal" class="modal" hidden>
+                        <div class="modal-content">
+                            <h3>Add a new item</h3>
+
+                            <form id="item-form">
+                                <label for="item-image">Image URL</label>
+                                <input type="url" id="item-image" placeholder="Paste an image URL" required>
+
+                                <label for="item-name">Custom name (optional)</label>
+                                <input type="text" id="item-name" placeholder="Enter a name (optional)">
+
+                                <label for="item-color">Choose a color</label>
+                                <input type="color" id="item-color" value="#a5b4fc">
+
+                                <div class="modal-buttons">
+                                    <button type="button" id="cancel-item">Cancel</button>
+                                    <button type="submit">Add item</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="pool"></div>
+                    <!-- --- -->
+                </div>
+        </section>
+        <script src="app.js"></script>
+    </main>
+</body>
+
+</html>
