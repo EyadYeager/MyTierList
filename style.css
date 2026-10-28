@@ -65,3 +65,30 @@
     border: 1px solid #ccc;
   }
 }
+
+.tierlist-browser {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tierlist-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  text-align: center;
+}
+
+.link-layout {
+  float: right;
+  padding: 12px 20px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
