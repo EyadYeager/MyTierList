@@ -66,24 +66,28 @@
   }
 }
 
-.tierlist-browser {
+.outer-list-browser {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  max-height:-webkit-fill-available ;
+  overflow-y: auto;
 }
 
-.tierlist-item {
+.list-browser {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 10px;
   text-align: center;
+  justify-content: center;
 }
 
-.link-layout {
+.list-item {
   float: right;
-  padding: 12px 20px;
+  padding: 10% 10%;
   margin-top: 8px;
   margin-right: 16px;
   background-color: #2196F3;
@@ -91,4 +95,14 @@
   border: none;
   cursor: pointer;
   font-size: 17px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 80%;
+  margin: 0 auto;
 }
