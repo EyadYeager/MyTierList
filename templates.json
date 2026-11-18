@@ -1,0 +1,48 @@
+{
+    "style-template": [
+        {
+            "name": "default",
+            "description": "Default template for the application.",
+            "version": "1.0.0",
+            "author": "Your Name",
+            "license": "MIT"
+        },
+        {
+            "name": "dark-mode",
+            "description": "A dark mode template for better visibility in low light.",
+            "version": "1.0.0",
+            "author": "Your Name",
+            "license": "MIT"
+        },
+        {
+            "name": "light-mode",
+            "description": "A light mode template for a clean and bright interface.",
+            "version": "1.0.0",
+            "author": "Your Name",
+            "license": "MIT"
+        }
+    ],
+    "list-template": [
+        {
+            "id": "Game",
+            "title": "Game Template",
+            "thumbnail": "game_template.png"
+
+        },
+        {   
+            "id": "Anime",
+            "title": "Anime Template",
+            "thumbnail": "anime_template.png"
+        },
+        {
+            "id": "Movie",
+            "title": "Movie Template",
+            "thumbnail": "movie_template.png"
+        },
+        {
+            "id": "Book",
+            "title": "Book Template",
+            "thumbnail": "book_template.png"
+        }
+    ]
+}
