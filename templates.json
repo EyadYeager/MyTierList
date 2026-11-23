@@ -28,21 +28,66 @@
             "title": "Game Template",
             "thumbnail": "https://miro.medium.com/1*VUV3vJhKLSieNcaWSqBZGg.png",
             "items": [
-                { "name": "The Legend of Zelda: Breath of the Wild", "image": "https://placehold.co/300x300/18181b/ffffff?text=Breath+of+the+Wild" },
-                { "name": "Super Mario Odyssey", "image": "https://placehold.co/300x300/18181b/ffffff?text=Super+Mario+Odyssey" },
-                { "name": "Red Dead Redemption 2", "image": "https://placehold.co/300x300/18181b/ffffff?text=Red+Dead+Redemption+2" },
-                { "name": "The Witcher 3: Wild Hunt", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Witcher+3" },
-                { "name": "God of War Ragnarok", "image": "https://placehold.co/300x300/18181b/ffffff?text=God+of+War+Ragnarok" },
-                { "name": "Hollow Knight", "image": "https://placehold.co/300x300/18181b/ffffff?text=Hollow+Knight" },
-                { "name": "Ghost of Tsushima", "image": "https://placehold.co/300x300/18181b/ffffff?text=Ghost+of+Tsushima" },
-                { "name": "Hades", "image": "https://placehold.co/300x300/18181b/ffffff?text=Hades" },
-                { "name": "Minecraft", "image": "https://placehold.co/300x300/18181b/ffffff?text=Minecraft" },
-                { "name": "Fortnite", "image": "https://placehold.co/300x300/18181b/ffffff?text=Fortnite" },
-                { "name": "The Last of Us Part II", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Last+of+Us+II" },
-                { "name": "Cyberpunk 2077", "image": "https://placehold.co/300x300/18181b/ffffff?text=Cyberpunk+2077" },
-                { "name": "Elden Ring", "image": "https://placehold.co/300x300/18181b/ffffff?text=Elden+Ring" },
-                { "name": "Final Fantasy XVI", "image": "https://placehold.co/300x300/18181b/ffffff?text=Final+Fantasy+XVI" },
-                { "name": "Resident Evil Village", "image": "https://placehold.co/300x300/18181b/ffffff?text=Resident+Evil+Village" }
+                {
+                    "name": "The Legend of Zelda: Breath of the Wild",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Breath+of+the+Wild"
+                },
+                {
+                    "name": "Super Mario Odyssey",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Super+Mario+Odyssey"
+                },
+                {
+                    "name": "Red Dead Redemption 2",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Red+Dead+Redemption+2"
+                },
+                {
+                    "name": "The Witcher 3: Wild Hunt",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Witcher+3"
+                },
+                {
+                    "name": "God of War Ragnarok",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=God+of+War+Ragnarok"
+                },
+                {
+                    "name": "Hollow Knight",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Hollow+Knight"
+                },
+                {
+                    "name": "Ghost of Tsushima",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Ghost+of+Tsushima"
+                },
+                {
+                    "name": "Hades",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Hades"
+                },
+                {
+                    "name": "Minecraft",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Minecraft"
+                },
+                {
+                    "name": "Fortnite",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Fortnite"
+                },
+                {
+                    "name": "The Last of Us Part II",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Last+of+Us+II"
+                },
+                {
+                    "name": "Cyberpunk 2077",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Cyberpunk+2077"
+                },
+                {
+                    "name": "Elden Ring",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Elden+Ring"
+                },
+                {
+                    "name": "Final Fantasy XVI",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Final+Fantasy+XVI"
+                },
+                {
+                    "name": "Resident Evil Village",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Resident+Evil+Village"
+                }
             ]
         },
         {
@@ -50,21 +95,66 @@
             "title": "Anime Template",
             "thumbnail": "https://placehold.co/600x400/db2777/ffffff?text=Anime",
             "items": [
-                { "name": "Naruto", "image": "https://placehold.co/300x300/18181b/ffffff?text=Naruto" },
-                { "name": "One Piece", "image": "https://placehold.co/300x300/18181b/ffffff?text=One+Piece" },
-                { "name": "Attack on Titan", "image": "https://placehold.co/300x300/18181b/ffffff?text=Attack+on+Titan" },
-                { "name": "My Hero Academia", "image": "https://placehold.co/300x300/18181b/ffffff?text=My+Hero+Academia" },
-                { "name": "Demon Slayer", "image": "https://placehold.co/300x300/18181b/ffffff?text=Demon+Slayer" },
-                { "name": "Jujutsu Kaisen", "image": "https://placehold.co/300x300/18181b/ffffff?text=Jujutsu+Kaisen" },
-                { "name": "Dragon Ball", "image": "https://placehold.co/300x300/18181b/ffffff?text=Dragon+Ball" },
-                { "name": "Fullmetal Alchemist", "image": "https://placehold.co/300x300/18181b/ffffff?text=Fullmetal+Alchemist" },
-                { "name": "Death Note", "image": "https://placehold.co/300x300/18181b/ffffff?text=Death+Note" },
-                { "name": "Tokyo Revengers", "image": "https://placehold.co/300x300/18181b/ffffff?text=Tokyo+Revengers" },
-                { "name": "Black Clover", "image": "https://placehold.co/300x300/18181b/ffffff?text=Black+Clover" },
-                { "name": "Bleach", "image": "https://placehold.co/300x300/18181b/ffffff?text=Bleach" },
-                { "name": "Fairy Tail", "image": "https://placehold.co/300x300/18181b/ffffff?text=Fairy+Tail" },
-                { "name": "Sword Art Online", "image": "https://placehold.co/300x300/18181b/ffffff?text=Sword+Art+Online" },
-                { "name": "One Punch Man", "image": "https://placehold.co/300x300/18181b/ffffff?text=One+Punch+Man" }
+                {
+                    "name": "Naruto",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Naruto"
+                },
+                {
+                    "name": "One Piece",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=One+Piece"
+                },
+                {
+                    "name": "Attack on Titan",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Attack+on+Titan"
+                },
+                {
+                    "name": "My Hero Academia",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=My+Hero+Academia"
+                },
+                {
+                    "name": "Demon Slayer",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Demon+Slayer"
+                },
+                {
+                    "name": "Jujutsu Kaisen",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Jujutsu+Kaisen"
+                },
+                {
+                    "name": "Dragon Ball",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Dragon+Ball"
+                },
+                {
+                    "name": "Fullmetal Alchemist",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Fullmetal+Alchemist"
+                },
+                {
+                    "name": "Death Note",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Death+Note"
+                },
+                {
+                    "name": "Tokyo Revengers",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Tokyo+Revengers"
+                },
+                {
+                    "name": "Black Clover",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Black+Clover"
+                },
+                {
+                    "name": "Bleach",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Bleach"
+                },
+                {
+                    "name": "Fairy Tail",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Fairy+Tail"
+                },
+                {
+                    "name": "Sword Art Online",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Sword+Art+Online"
+                },
+                {
+                    "name": "One Punch Man",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=One+Punch+Man"
+                }
             ]
         },
         {
@@ -72,21 +162,66 @@
             "title": "Movie Template",
             "thumbnail": "https://placehold.co/600x400/9333ea/ffffff?text=Movies",
             "items": [
-                { "name": "The Shawshank Redemption", "image": "https://placehold.co/300x300/18181b/ffffff?text=Shawshank+Redemption" },
-                { "name": "The Godfather", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Godfather" },
-                { "name": "The Dark Knight", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Dark+Knight" },
-                { "name": "Pulp Fiction", "image": "https://placehold.co/300x300/18181b/ffffff?text=Pulp+Fiction" },
-                { "name": "Forrest Gump", "image": "https://placehold.co/300x300/18181b/ffffff?text=Forrest+Gump" },
-                { "name": "Inception", "image": "https://placehold.co/300x300/18181b/ffffff?text=Inception" },
-                { "name": "Fight Club", "image": "https://placehold.co/300x300/18181b/ffffff?text=Fight+Club" },
-                { "name": "The Matrix", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Matrix" },
-                { "name": "The Lord of the Rings: The Return of the King", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Return+of+the+King" },
-                { "name": "The Silence of the Lambs", "image": "https://placehold.co/300x300/18181b/ffffff?text=Silence+of+the+Lambs" },
-                { "name": "John Wick", "image": "https://placehold.co/300x300/18181b/ffffff?text=John+Wick" },
-                { "name": "The Avengers Endgame", "image": "https://placehold.co/300x300/18181b/ffffff?text=Avengers+Endgame" },
-                { "name": "Joker", "image": "https://placehold.co/300x300/18181b/ffffff?text=Joker" },
-                { "name": "Mission: Impossible", "image": "https://placehold.co/300x300/18181b/ffffff?text=Mission+Impossible" },
-                { "name": "The Matrix Reloaded", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Matrix+Reloaded" }
+                {
+                    "name": "The Shawshank Redemption",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Shawshank+Redemption"
+                },
+                {
+                    "name": "The Godfather",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Godfather"
+                },
+                {
+                    "name": "The Dark Knight",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Dark+Knight"
+                },
+                {
+                    "name": "Pulp Fiction",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Pulp+Fiction"
+                },
+                {
+                    "name": "Forrest Gump",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Forrest+Gump"
+                },
+                {
+                    "name": "Inception",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Inception"
+                },
+                {
+                    "name": "Fight Club",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Fight+Club"
+                },
+                {
+                    "name": "The Matrix",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Matrix"
+                },
+                {
+                    "name": "The Lord of the Rings: The Return of the King",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Return+of+the+King"
+                },
+                {
+                    "name": "The Silence of the Lambs",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Silence+of+the+Lambs"
+                },
+                {
+                    "name": "John Wick",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=John+Wick"
+                },
+                {
+                    "name": "The Avengers Endgame",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Avengers+Endgame"
+                },
+                {
+                    "name": "Joker",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Joker"
+                },
+                {
+                    "name": "Mission: Impossible",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Mission+Impossible"
+                },
+                {
+                    "name": "The Matrix Reloaded",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Matrix+Reloaded"
+                }
             ]
         },
         {
@@ -94,21 +229,66 @@
             "title": "Book Template",
             "thumbnail": "https://placehold.co/600x400/ca8a04/ffffff?text=Books",
             "items": [
-                { "name": "To Kill a Mockingbird", "image": "https://placehold.co/300x300/18181b/ffffff?text=To+Kill+a+Mockingbird" },
-                { "name": "1984", "image": "https://placehold.co/300x300/18181b/ffffff?text=1984" },
-                { "name": "Pride and Prejudice", "image": "https://placehold.co/300x300/18181b/ffffff?text=Pride+and+Prejudice" },
-                { "name": "The Great Gatsby", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Great+Gatsby" },
-                { "name": "Moby-Dick", "image": "https://placehold.co/300x300/18181b/ffffff?text=Moby-Dick" },
-                { "name": "War and Peace", "image": "https://placehold.co/300x300/18181b/ffffff?text=War+and+Peace" },
-                { "name": "The Catcher in the Rye", "image": "https://placehold.co/300x300/18181b/ffffff?text=Catcher+in+the+Rye" },
-                { "name": "The Hobbit", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Hobbit" },
-                { "name": "The Lord of the Rings", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Lord+of+the+Rings" },
-                { "name": "Harry Potter and the Sorcerer's Stone", "image": "https://placehold.co/300x300/18181b/ffffff?text=Harry+Potter+1" },
-                { "name": "The Chronicles of Narnia", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Chronicles+of+Narnia" },
-                { "name": "The Da Vinci Code", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Da+Vinci+Code" },
-                { "name": "The Hunger Games", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Hunger+Games" },
-                { "name": "The Kite Runner", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Kite+Runner" },
-                { "name": "The Alchemist", "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Alchemist" }
+                {
+                    "name": "To Kill a Mockingbird",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=To+Kill+a+Mockingbird"
+                },
+                {
+                    "name": "1984",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=1984"
+                },
+                {
+                    "name": "Pride and Prejudice",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Pride+and+Prejudice"
+                },
+                {
+                    "name": "The Great Gatsby",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Great+Gatsby"
+                },
+                {
+                    "name": "Moby-Dick",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Moby-Dick"
+                },
+                {
+                    "name": "War and Peace",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=War+and+Peace"
+                },
+                {
+                    "name": "The Catcher in the Rye",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Catcher+in+the+Rye"
+                },
+                {
+                    "name": "The Hobbit",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Hobbit"
+                },
+                {
+                    "name": "The Lord of the Rings",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Lord+of+the+Rings"
+                },
+                {
+                    "name": "Harry Potter and the Sorcerer's Stone",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=Harry+Potter+1"
+                },
+                {
+                    "name": "The Chronicles of Narnia",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Chronicles+of+Narnia"
+                },
+                {
+                    "name": "The Da Vinci Code",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Da+Vinci+Code"
+                },
+                {
+                    "name": "The Hunger Games",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Hunger+Games"
+                },
+                {
+                    "name": "The Kite Runner",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Kite+Runner"
+                },
+                {
+                    "name": "The Alchemist",
+                    "image": "https://placehold.co/300x300/18181b/ffffff?text=The+Alchemist"
+                }
             ]
         }
     ]
