@@ -15,11 +15,12 @@ async function loadTemplates() {
             link.href = `editor.html?template=${encodeURIComponent(template.id)}`;
 
             const img = document.createElement("img")
+            img.className = "thumbnail";
             img.src = template.thumbnail;
             img.alt = template.name;
 
             const name = document.createElement("span");
-            name.textContent = template.name;
+            name.textContent = template.title;
 
             link.append(img, name);
 
